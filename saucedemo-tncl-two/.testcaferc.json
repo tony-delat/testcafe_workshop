@@ -1,0 +1,14 @@
+{
+    "browsers": ["chrome","firefox"],
+    "src": "page_model/tests/AllTests.test.js",
+    "screenshots": {
+        "path": "./configuration_file/screenshot/",
+        "takeOnFails": true,
+        "fullPage": false
+    },
+    "reporter": {
+            "name": "json",
+            "output": "./reports/report.json"
+    },
+    "concurrency": 2
+}

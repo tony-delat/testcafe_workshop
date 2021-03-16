@@ -1,0 +1,113 @@
+{
+  "startTime": "2021-03-16T03:48:24.609Z",
+  "endTime": "2021-03-16T03:52:09.697Z",
+  "userAgents": [
+    "Chrome 89.0.4389.82 / Windows 10",
+    "Firefox 86.0 / Windows 10"
+  ],
+  "passed": 9,
+  "total": 11,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Login Page testing",
+      "path": "C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\page_model\\tests\\AllTests.test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Test 1 - User is able to login using valid credentials",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3716,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 2a - User is unable to login using invalid credentials",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3714,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 2b - User is unable to login using wrong password",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4031,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 3 - Logged user is able to logout from the website",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5074,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 4 - User is able to navigate to the Shopping Cart",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2827,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 5 - User is able to add a single item to the shopping cart",
+          "meta": {},
+          "errs": [
+            "The element that matches the specified selector is not visible.\n\nBrowser: Chrome 89.0.4389.82 / Windows 10\nScreenshot: C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\configuration_file\\screenshot\\2021-03-15_21-48-24\\test-6\\Chrome_89.0.4389.82_Windows_10\\errors\\1.png\n\n   115 |        var productButton\n   116 |\n   117 |        productText = await this.getSelectedProductName(index)\n   118 |        productButton = await this.getSelectedProductAddButton(index)\n   119 |    \n > 120 |        await t.click(productButton)\n   121 |            .wait(2000)\n   122 |\n   123 |        return productText;\n   124 |\n   125 |    }\n\n   at <anonymous> (C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\page_model\\pages\\ProductsPage.js:120:17)\n   at asyncGeneratorStep (C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\page_model\\pages\\ProductsPage.js:1:310)\n   at _next (C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\page_model\\pages\\ProductsPage.js:1:648)"
+          ],
+          "durationMs": 107599,
+          "screenshotPath": "C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\configuration_file\\screenshot\\2021-03-15_21-48-24\\test-6\\Chrome_89.0.4389.82_Windows_10\\errors\\1.png",
+          "skipped": false
+        },
+        {
+          "name": "Test 6 - User is able to add three items to the shopping cart",
+          "meta": {},
+          "errs": [],
+          "durationMs": 110670,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 7 - User is unable to proceed with purchase if personal info is not entered",
+          "meta": {},
+          "errs": [],
+          "durationMs": 110222,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 8 - User can access Checkout Summary page upon entering personal details",
+          "meta": {},
+          "errs": [],
+          "durationMs": 111121,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 9 - User is able to add three items and go to the checkout overview page",
+          "meta": {},
+          "errs": [],
+          "durationMs": 99982,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Test 10 - User can successfully purchase an item",
+          "meta": {},
+          "errs": [
+            "The element that matches the specified selector is not visible.\n\nBrowser: Chrome 89.0.4389.82 / Windows 10\nScreenshot: C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\configuration_file\\screenshot\\2021-03-15_21-48-24\\test-11\\Chrome_89.0.4389.82_Windows_10\\errors\\1.png\n\n   115 |        var productButton\n   116 |\n   117 |        productText = await this.getSelectedProductName(index)\n   118 |        productButton = await this.getSelectedProductAddButton(index)\n   119 |    \n > 120 |        await t.click(productButton)\n   121 |            .wait(2000)\n   122 |\n   123 |        return productText;\n   124 |\n   125 |    }\n\n   at <anonymous> (C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\page_model\\pages\\ProductsPage.js:120:17)\n   at asyncGeneratorStep (C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\page_model\\pages\\ProductsPage.js:1:310)\n   at _next (C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\page_model\\pages\\ProductsPage.js:1:648)"
+          ],
+          "durationMs": 96978,
+          "screenshotPath": "C:\\Users\\justa\\Documents\\wize - prueba\\saucedemo-tncl-two\\configuration_file\\screenshot\\2021-03-15_21-48-24\\test-11\\Chrome_89.0.4389.82_Windows_10\\errors\\1.png",
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

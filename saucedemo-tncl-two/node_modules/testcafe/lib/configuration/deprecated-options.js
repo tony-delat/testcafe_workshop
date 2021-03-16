@@ -1,0 +1,18 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DEPRECATED_OPTION_NAMES = exports.DEPRECATED_OPTIONS = void 0;
+const option_names_1 = __importDefault(require("./option-names"));
+const customizable_compilers_1 = __importDefault(require("./customizable-compilers"));
+const DEPRECATED_OPTIONS = [
+    {
+        what: option_names_1.default.tsConfigPath.toString(),
+        useInstead: `${option_names_1.default.compilerOptions}.${customizable_compilers_1.default.typescript}.configPath`
+    }
+];
+exports.DEPRECATED_OPTIONS = DEPRECATED_OPTIONS;
+const DEPRECATED_OPTION_NAMES = DEPRECATED_OPTIONS.map(deprecatedOption => deprecatedOption.what);
+exports.DEPRECATED_OPTION_NAMES = DEPRECATED_OPTION_NAMES;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVwcmVjYXRlZC1vcHRpb25zLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NvbmZpZ3VyYXRpb24vZGVwcmVjYXRlZC1vcHRpb25zLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLGtFQUEwQztBQUMxQyxzRkFBNkQ7QUFFN0QsTUFBTSxrQkFBa0IsR0FBRztJQUN2QjtRQUNJLElBQUksRUFBUSxzQkFBWSxDQUFDLFlBQVksQ0FBQyxRQUFRLEVBQUU7UUFDaEQsVUFBVSxFQUFFLEdBQUcsc0JBQVksQ0FBQyxlQUFlLElBQUksZ0NBQXFCLENBQUMsVUFBVSxhQUFhO0tBQy9GO0NBQ0osQ0FBQztBQUtFLGdEQUFrQjtBQUh0QixNQUFNLHVCQUF1QixHQUFHLGtCQUFrQixDQUFDLEdBQUcsQ0FBQyxnQkFBZ0IsQ0FBQyxFQUFFLENBQUMsZ0JBQWdCLENBQUMsSUFBSSxDQUFDLENBQUM7QUFJOUYsMERBQXVCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IE9QVElPTl9OQU1FUyBmcm9tICcuL29wdGlvbi1uYW1lcyc7XG5pbXBvcnQgQ3VzdG9taXphYmxlQ29tcGlsZXJzIGZyb20gJy4vY3VzdG9taXphYmxlLWNvbXBpbGVycyc7XG5cbmNvbnN0IERFUFJFQ0FURURfT1BUSU9OUyA9IFtcbiAgICB7XG4gICAgICAgIHdoYXQ6ICAgICAgIE9QVElPTl9OQU1FUy50c0NvbmZpZ1BhdGgudG9TdHJpbmcoKSxcbiAgICAgICAgdXNlSW5zdGVhZDogYCR7T1BUSU9OX05BTUVTLmNvbXBpbGVyT3B0aW9uc30uJHtDdXN0b21pemFibGVDb21waWxlcnMudHlwZXNjcmlwdH0uY29uZmlnUGF0aGBcbiAgICB9XG5dO1xuXG5jb25zdCBERVBSRUNBVEVEX09QVElPTl9OQU1FUyA9IERFUFJFQ0FURURfT1BUSU9OUy5tYXAoZGVwcmVjYXRlZE9wdGlvbiA9PiBkZXByZWNhdGVkT3B0aW9uLndoYXQpO1xuXG5leHBvcnQge1xuICAgIERFUFJFQ0FURURfT1BUSU9OUyxcbiAgICBERVBSRUNBVEVEX09QVElPTl9OQU1FU1xufTtcbiJdfQ==
